@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul > li {
+    padding: 5px 0;
+}
+
+ul > li::before {
+    content: '🔵 ';
+    padding-right: 8px;
+}
+
+.card-container {
+    width: 85%;
+    margin: 32px auto;
+    background-image: linear-gradient(to right, #19d7ed , #5885f9);
+    border-radius: 4px;
+}
+
+.hero-image {
+    height: 250px;
+    background-image: url(man.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}  
+
+.name-title {
+    padding: 36px 24px;
+    color: white;
+}
+
+.name {
+    margin-bottom: 8px;
+    font-size: 38px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+.section {
+    background-color: white;
+    padding: 36px 24px;
+    border-bottom: 1px solid lightgray;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.section-title {
+    border-bottom: 3px solid #19d7ed;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #575757;
+}
+
+.body-text {
+    color: #575757;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.body-text > p {
+    padding: 10px 0;
+}
