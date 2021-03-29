@@ -3,13 +3,73 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>JS Practice #1</title>
 </head>
+
 <body>
     <!-- for this one, let's write some JS code directly inside our HTML -->
     <!-- Start by creating a script tag... -->
+    <script>
+        const myFistName = 'Sean';
+        const myAge = 34;
+        const myFullName = myFistName + ' Gee';
 
+        console.log(`hi there my name is ${myFullName} and I am ${myAge}`)
+
+        if (myAge > 28) {
+            console.log('Im older than Aaron')
+        } else if (myAge === 28) {
+            console.log('Im the same age as Aaron')
+        } else {
+            console.log('Im youger than Aaron')
+        }
+
+        const isEven = myAge % 2 === 0;
+
+        if (isEven) {
+            console.log('My age is even')
+        } else {
+            console.log('My age is odd')
+        }
+
+        const activeUserCount = 4;
+        const noUsers = 0;
+
+        if (activeUserCount < 1) {
+            console.log(`There are ${noUsers} active users`);
+        } else if (activeUserCount > 1) {
+            console.log(`There are ${activeUserCount} active users`);
+        } else console.log(`There is ${activeUserCount} active user`);
+
+
+
+        // const num = 1;
+        // const lastDigit = i % 10; // teen numbers
+
+        // if (num > 10 && num < 20) {
+        //     console.log(`${num}th`)
+        // } else if ()
+
+        const num = 1;
+        const lastDigit = num % 10; // teen numbers
+
+        if (num > 10 && num < 20) {
+            console.log(num + 'th');
+        } else if (num === 1) {
+            console.log(`${num}st`)
+        } else if (lastDigit === 1) {
+            console.log(`${num}st`)
+        } else if (lastDigit === 2) {
+            console.log(`${num}nd`)
+        } else if (lastDigit === 3) {
+            console.log(`${num}rd`)
+        } else {
+            console.log(`${num}th`)
+        }
+
+    </script>
     <!-- 
         Now, let's write some code inside
         (And remember you can test variable values at any time by using console.log, 
@@ -29,21 +89,21 @@
             > "Im the same age as Aaron" if you ARE 28
             > Otherwise it should print "Im younger than Aaron"
     -->
-    
+
     <!-- 
         ☑️ Next, calculate whether your age is even or odd, and store it in a boolean variable "isEven"
         ☑️ Now write another if statement that prints "My age is even", or "My age is odd", 
           depending which is true
      -->
 
-     <!-- 
+    <!-- 
         YOUR CODE SHOULD NOW PRINT 3 SENTENCES TO THE CONSOLE:
         ☑️ Your introduction with name and age
         ☑️ A sentence saying whether you are older or younger than me
         ☑️ A sentence saying whether your age is even or odd
      -->
 
-     <!-- 
+    <!-- 
         LET'S GET A BIT MORE CHALLENGING
         This is a real common use case to create different strings
 
@@ -58,7 +118,7 @@
             -> (note the difference)
      -->
 
-     <!-- 
+    <!-- 
         AND THE FINAL CHALLENGE (HARD)
         Let's bring the previous example to a more difficult level
         
@@ -69,4 +129,5 @@
      -->
 
 </body>
+
 </html>
