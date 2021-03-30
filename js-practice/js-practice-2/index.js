@@ -13,6 +13,10 @@
     ☑️ Finally, change the "zero index" number to be 4
     ☑️ And print out the entire "nums array"
 */
+const nums = [1,2,3];
+console.log(nums[0], nums[nums.length - 1]);// console.log(nums[0], nums[nums.length - 1]); console.log(nums[0], nums[2]);
+nums[0] = 4;
+console.log(nums)
 
 /*
     ☑️ Let's add 5 and 6 to the end of the nums array (HINT: use a "method")
@@ -21,6 +25,12 @@
     ☑️ And let's "pop" off the last number and store it in a variable "lastNum"
     ☑️ Then print "lastNum" to the console!
 */
+nums.push(5, 6)
+console.log(nums);
+nums[nums.length - 1] = 10;
+console.log(nums);
+const lastNum = nums.pop();
+console.log(lastNum);
 
 /*
     ☑️ Let's declare an "Object literal" called "product" with properties for:
@@ -37,3 +47,33 @@
     ☑️ Let's change the soldOut property to true (don't change the original object)
     ☑️ Print out the entire object and make sure everything looks correct
 */
+
+// const product = {
+//     name: "shiny shoes",
+//     brand: "gucci",
+//     price: 100,
+//     color: "black",
+//     sale: true,
+//     soldOut: false,
+//     tags: ['men', 'luxary']
+// }
+
+// console.log(product.name, product.brand, product.price);
+// console.log(product);
+// product.soldOut = true;
+// console.log(product);
+
+const product = {
+    name: "shiny shoes",
+    brand: "gucci",
+    price: 100,
+    color: "black",
+    soldOut: false
+}
+
+console.log(product.name, product.brand, product.price);
+product.sale = true;
+console.log(product);
+product.tags = ['men', 'luxury'];
+console.log(product);
+product.soldOut = true;
