@@ -9,6 +9,13 @@
     ☑️ inside the "if" block, print out the first item from the array
     ☑️ inside the "else" block, push a string "Mon" into the array
 */
+const days = [];
+
+if (days.length) {
+   console.log(days[0]);
+} else {
+    days.push('Mon');
+}
 
 /*
     ☑️ create an "Array Literal" and save it in the variable "months" and add the values "Jan" and "Feb"
@@ -17,6 +24,9 @@
     ☑️ inside the "else" block, push a string "Jan" into the array.
     ☑️ outside the "if else" blocks, print out the "type of" the "months" variable (HINT: arrays have a special type function)
 */
+
+const months = ['Jan', 'Feb'];
+
 
 /*
     ☑️ create a variable "numOfWeeks" and save the number 0 in it
