@@ -15,18 +15,27 @@ if (days.length) {
    console.log(days[0]);
 } else {
     days.push('Mon');
+    console.log(days[0]);
 }
+
+
 
 /*
     ☑️ create an "Array Literal" and save it in the variable "months" and add the values "Jan" and "Feb"
     ☑️ write an "if" statement to test if the array has any items AND the first month starts with "J" 
     ☑️ inside the "if" block, print out the first item from the array
     ☑️ inside the "else" block, push a string "Jan" into the array.
-    ☑️ outside the "if else" blocks, print out the "type of" the "months" variable (HINT: arrays have a special type function)
+    ☑️ outside the "if / else" blocks, print out the "type of" the "months" variable (HINT: arrays have a special type function)
 */
 
 const months = ['Jan', 'Feb'];
 
+if (months.length && months[0][0] === 'J') {
+    console.log('Jan');
+} else {
+    months.push('Jan');
+}
+console.log(Array.isArray(months));
 
 /*
     ☑️ create a variable "numOfWeeks" and save the number 0 in it
