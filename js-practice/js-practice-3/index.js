@@ -44,3 +44,19 @@ console.log(Array.isArray(months));
     ☑️ outside the "if" block, print the value of "areNoWeeks" -- what is it?
     ☑️ can you fix this so "areNoWeeks" prints out a boolean?
 */
+
+// var numOfWeeks = 3;
+
+// if (typeof numOfWeeks === 'number') {
+//     var areNoWeeks = Boolean(numOfWeeks)
+// }
+// console.log(areNoWeeks);
+
+var numOfWeeks = 3;
+
+let areNoWeeks;
+
+if (typeof numOfWeeks === 'number') {
+   areNoWeeks = Boolean(numOfWeeks)
+}
+console.log(areNoWeeks);
