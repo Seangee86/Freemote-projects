@@ -49,7 +49,8 @@ for (members of family) {
 */
 const i = 0;
 
-//REWATCH VIDEOS!!!!!
+//FINISH VIDEOS!!!!!
+
 
 while (true) {
     if (i < 10) {
