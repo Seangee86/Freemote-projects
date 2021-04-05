@@ -47,19 +47,11 @@ for (members of family) {
     ☑️ ...because you need to increment i by one each time the loop runs (do this inside the loop body)
     ☑️ now console log i in the body, and make sure it's printing numbers 0-9
 */
-const i = 0;
+let i = 0;
 
-//FINISH VIDEOS!!!!!
-
-
-while (true) {
-    if (i < 10) {
-        i++
-        break;
-    }
+while (i < 10) {
     console.log(i);
-}
-
+    i++;
 }
 /*
     ☑️ ok take the while loop code from above and paste it below
@@ -67,6 +59,12 @@ while (true) {
     ☑️ set the break condition to be when the string length is > 10
     ☑️ and add a new "A" character to the end of i every time the loop runs.
 */
+let str = 0;
+
+while (str.length > 10) {
+    console.log(str)
+    str += 'A';
+}
 
 /*
     ☑️ still with me? let's create an object in variable "computer"
@@ -75,3 +73,13 @@ while (true) {
     ☑️ on each loop iteration, print out the key and value in a string formatted like so:
         "ram spec is 8GB", "cpu spec is quad core", "storage spec is 1TB"
 */
+
+const computer = {
+    ram: '8gb',
+    cpu: 'quad core',
+    storage: '1TB'
+}
+
+for (parts in computer) {
+    console.log(`${parts} spec is ${computer[parts]}`);
+}
